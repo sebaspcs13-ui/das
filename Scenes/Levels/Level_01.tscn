@@ -52,7 +52,7 @@ next_scene = ExtResource("2_0ac5u")
 
 [node name="Player" parent="." unique_id=833233811 instance=ExtResource("2_pay8t")]
 z_index = 1
-position = Vector2(150, 318)
+position = Vector2(135, 327)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=681299456]
 position = Vector2(16, 36)
@@ -72,13 +72,16 @@ editor_draw_drag_margin = true
 [node name="Coins" type="Node2D" parent="." unique_id=1185427921]
 
 [node name="Coin" parent="Coins" unique_id=533945679 instance=ExtResource("3_rrh80")]
-position = Vector2(576, 406)
+position = Vector2(572, 386)
 
 [node name="Coin2" parent="Coins" unique_id=1421792171 instance=ExtResource("3_rrh80")]
-position = Vector2(712, 353)
+position = Vector2(700, 351)
+
+[node name="Coin4" parent="Coins" unique_id=1392923114 instance=ExtResource("3_rrh80")]
+position = Vector2(393, 352)
 
 [node name="Coin3" parent="Coins" unique_id=1346381112 instance=ExtResource("3_rrh80")]
-position = Vector2(844, 408)
+position = Vector2(799, 428)
 
 [node name="Level" type="Node2D" parent="." unique_id=60221248]
 
@@ -94,9 +97,7 @@ layer_0/tile_data = PackedInt32Array(589836, 0, 5, 589835, 0, 5, 589834, 0, 5, 5
 
 [node name="SpawnPoint" type="Marker2D" parent="Level" unique_id=1967934212]
 unique_name_in_owner = true
-position = Vector2(174, 383)
-
-
+position = Vector2(141, 415)
 
 [node name="GameManager" type="Node2D" parent="." unique_id=573260747]
 script = ExtResource("4_vgfkr")
@@ -108,6 +109,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -52.0
+offset_top = -38.0
+offset_right = -52.0
+offset_bottom = -38.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("6_66mfc")
